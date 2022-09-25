@@ -5,4 +5,4 @@ cypress/videos
 cypress/downloads
 cypress/e2e/screenshots
 cypress/screenshots
-
+allure-report
