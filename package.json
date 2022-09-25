@@ -9,6 +9,7 @@
   "author": "koddaks",
   "license": "ISC",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.31.0",
     "cypress": "^10.8.0"
   }
 }
