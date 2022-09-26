@@ -69,7 +69,7 @@ describe("Sign up: ", () => {
     mainPage.signUpBtnInTopOfPage().click();
     signUpPage.registration(randomEmail + '@gmail.com', 'randomName', 'TestPassword1@');
     // signUpPage.emailErrorMessage().should('contain', 'This email address is already taken and cannot be used for a new account');
-    signUpPage.emailErrorMessage().should('contain', 'Another account already exists that resolves to the same');
+    signUpPage.emailErrorMessage().should('contain', 'Another account already exists that resolves to the same' || 'This email address is already taken and cannot be used for a new account');
     signUpPage.errorMessage().should('contain', 'One or more fields are not valid. Please update these fields and try again.')
   });
 
@@ -98,8 +98,7 @@ describe("Sections:", () => {
 
   it("products --> Elastic SIP Trunking /#8", () => {
     cy.viewport(1980, 1080);
-    cy.visit("https://telnyx.com/");
-    // cy.contains("Accept and close").click();
+    cy.visit("https://telnyx.com/");    
     mainPage.elasticSipTrunkingInDropMenu().click({ force: true });
     cy.location().should((loc) => {
       expect(loc.href).to.eq("https://telnyx.com/products/sip-trunks");

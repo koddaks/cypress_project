@@ -6,3 +6,4 @@ cypress/downloads
 cypress/e2e/screenshots
 cypress/screenshots
 allure-report
+cypress/plugins
