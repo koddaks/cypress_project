@@ -4,7 +4,11 @@
   "description": "cypress automation",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:run": "cypress run --env allure=true",
+        "allure:report": "allure generate allure-results --clean -o allure-report",
+        "test": "npm run cy:run || npm run posttest && npm run launchReport",
+        "posttest": "npm run allure:report",
+        "launchReport": "npx allure serve"
   },
   "author": "koddaks",
   "license": "ISC",

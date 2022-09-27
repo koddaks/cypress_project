@@ -1,0 +1,16 @@
+{
+  "defaultCommandTimeout": 10000,
+  "pageLoadTimeout": 80000,
+  "chromeWebSecurity": false,
+  "viewportWidth": 1980,
+  "viewportHHeight": 1080,
+  "reporter": "@shelex/cypress-allure-plugin",
+  "reporterOptions": {
+      "reportDir": "allure-report/html",
+      "charts": true,
+      "reportPageTitle": "My Test Suite",
+      "embeddedScreenshots": true,
+      "inlineAssets": true
+  },
+  "video": true
+}
