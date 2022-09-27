@@ -13,6 +13,12 @@
       "inlineAssets": true
   },
   "video": true,
+  "compilerOptions" : {
+    "allowJs" : true ,
+    "baseUrl" : "./" ,
+    "types" : [ "@shelex/cypress-allure-plugin" ],
+    "noEmit" : true 
+},
   "env": { 
     "allureResultsPath": "../allure-results",
 },
