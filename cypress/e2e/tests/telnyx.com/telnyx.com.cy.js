@@ -138,9 +138,9 @@ describe("Sections:", () => {
         cy.location().should((loc) => {
                 expect(loc.href).to.eq("https://telnyx.com/resources");
               });
-        cy.get('input[id="search"]').type('Introducing Telnyx Storage: Low-Cost Object Storage{Enter}')
-        // cy.get('img[alt*="Introducing Telnyx Storage: Low-Cost Object Storage"]').click();
-        cy.get('span[class="Text-sc-5o8owa-0 frufKM"]').click();        
+        cy.get('input[id="search"]').type('Introducing Telnyx Storage: Low-Cost Object Storage{Enter}');
+        cy.wait(2000);        
+        cy.get('a[href="/resources/introducing-telnyx-storage"]').click();        
         cy.wait(5000);
         cy.location().should((loc) => {
               expect(loc.href).to.eq("https://telnyx.com/resources/introducing-telnyx-storage");
