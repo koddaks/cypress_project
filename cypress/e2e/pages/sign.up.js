@@ -8,6 +8,7 @@ class SignUpPage {
   emailErrorMessage() {return cy.get('div [id="email_error"]')}
   errorMessage() {return cy.get('span[class="sc-570b157-1 eUoKGn"]')}
   
+ 
   registration(email, name, password){
     this.workEmailField().type(email);
     this.fullNameField().type(name);

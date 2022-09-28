@@ -2,7 +2,6 @@ class SignInPage {
 
 
   businessEmailField() { return cy.get('div[class*="TextField__InputWrapper-sc"] input[name="email"]');}
-
   passwordField() { return cy.get('input[type="password"]');}
   rememberEmailCheckBox() { return cy.get('svg[data-prefix="far"]');}
   logInBtn() {return cy.get('button[class*="LoginForm__LoginButton"]')}

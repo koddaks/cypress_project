@@ -15,10 +15,7 @@ class MainPage {
   }
   blogBtnInDowpPage(){
     return cy.get('[data-e2e="Footer--navItem-resources"] > div > .sc-7b6c9f9b-6 > :nth-child(2) > .sc-f97529d6-0 > .sc-6c41f57a-0 > span');
-  }
-  
-
-  
+  }  
 }
 
 export default MainPage

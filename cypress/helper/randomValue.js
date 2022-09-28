@@ -1,4 +1,4 @@
-class RandomValue{
+class RandomValue {
   generateValidEmail(email) {
     const symbols = "abcdefghijklmnopqrstuvwxyz1234567890";
     let string = "";
