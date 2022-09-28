@@ -4,6 +4,7 @@ import SignInPage from "../../pages/sign.in";
 import ElasticSipTrunkingPage from "../../pages/elastic.sip.trunking";
 import SmsApiPage from "../../pages/sms.api";
 import AboutTelnyxPage from "../../pages/about.telnyx";
+import RandomValue from "cypress/helper/randomValue.js";
 
 const mainPage = new MainPage();
 const signUpPage = new SignUpPage();
@@ -11,13 +12,14 @@ const signInPage = new SignInPage();
 const elasticSipTrunkingPage = new ElasticSipTrunkingPage();
 const smsApiPage = new SmsApiPage();
 const aboutTelnyxPage = new AboutTelnyxPage();
+const randomValuec = new RandomValue();
 
-const randomEmail =
-  Math.random().toString(36).substring(2, 9) +
-  Math.random().toString(36).substring(2, 9);
-const randomMail =
-  Math.random().toString(36).substring(2, 9) +
-  Math.random().toString(36).substring(2, 9);
+// const randomEmail =
+//   Math.random().toString(36).substring(2, 9) +
+//   Math.random().toString(36).substring(2, 9);
+// const randomMail =
+//   Math.random().toString(36).substring(2, 9) +
+//   Math.random().toString(36).substring(2, 9);
 
 describe("Sign in: ", () => {
   it("with invalid data /#1", () => {
